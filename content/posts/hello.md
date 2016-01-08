@@ -20,3 +20,11 @@ iea
 
 uie
 auiea
+
+
+uieauieylmaukieylmakuielaui
+ea
+ui
+ea
+uie
+a
