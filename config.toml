@@ -1,6 +1,6 @@
 baseURL = "https://mehmetkose.com.tr"
-languageCode = "en-us"
-defaultContentLanguage = "en"
+languageCode = "tr-TR"
+defaultContentLanguage = "tr"
 title = "Mehmet Köse"
 theme = "hermit"
 # enableGitInfo = true
@@ -14,7 +14,7 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
 # disqusShortname = "yourdiscussshortname"
 
 [author]
-  name = "Mehmet Kose"
+  name = "Mehmet Köse"
 
 [blackfriday]
   # hrefTargetBlank = true
@@ -36,8 +36,8 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
   # images = [""]
   themeColor = "#494f5c"
 
-  homeSubtitle = "A minimal and fast theme for Hugo."
-  footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+  homeSubtitle = "Meraklı bir yazılım geliştiricisi"
+  footerCopyright = ' &#183; '
   # bgImg = ""  # Homepage background-image URL
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
@@ -56,8 +56,8 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
     url = "https://twitter.com/mehmetkose"
 
   [[params.social]]
-    name = "instagram"
-    url = "https://instagram.com/mehmetkose"
+    name = "codepen"
+    url = "https://codepen.io/mehmetkose"
 
   [[params.social]]
     name = "github"
@@ -66,11 +66,11 @@ enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/func
 [menu]
 
   [[menu.main]]
-    name = "Posts"
-    url = "posts/"
+    name = "Blog"
+    url = "blog/"
     weight = 10
 
   [[menu.main]]
-    name = "About"
-    url = "about-hugo/"
+    name = "Hakkımda"
+    url = "hakkimda/"
     weight = 20

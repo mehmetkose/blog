@@ -12,7 +12,7 @@ other = "主页"
 [archives]
 other = "归档"
 
-# posts/single.html
+# blog/single.html
 #
 [wordCount]
 other = "{{ .WordCount }} 字"
