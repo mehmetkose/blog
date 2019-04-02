@@ -4,8 +4,13 @@ date: 2019-03-29
 title: React Context ilk izlenimlerim
 featuredImg: ""
 tags: 
-  - hex
+  - react
+  - prop drilling
   - frontend
+  - context
+  - redux
+  - flux
+  - jsx
 ---
 
 Son birkaç senede kendimce geliştirdiğim React ve Preact uygulamalar ve Freelance olarak yaptığım appler  büyük boyutlara ulaşmadığı için state management konusunda external bir çözüm kullanma ihtiyacı hissetmemiş, [prop-drilling](https://kentcdodds.com/blog/prop-drilling/)'den şaşmamıştım. Şöyle bir bakayım diye okumaya başladığım Redux, Flux konularına da o an ihtiyacım olmadığı için devam etmedim. Velhasılı, araya askerlik de girdi, döndüğümde ortaya [Context](https://reactjs.org/docs/context.html) çıkmıştı. Yeni başladığım işte de madem böyle bir şey var deneyelim diyerek state management ihtiyacını *Context* ile çözmeye giriştim.
