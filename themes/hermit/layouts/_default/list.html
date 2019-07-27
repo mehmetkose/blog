@@ -25,6 +25,19 @@
 			</ul>
 		</div>
 		{{- end }}
+
+		<div style="text-align:center">
+			<h1>Email Aboneliği</h1>
+			<form method="POST" action="http://optin.sndlp.com/23Q/878/da630e83">
+				Email: <input type="text" name="Fields[EmailAddress]" id="Fields_EmailAddress" value="" placeholder="mail@mail.com" /><br>
+				Pazarlama İzinleri:<br>
+				<input type="checkbox" name="Fields[CustomField2][]" id="Fields_CustomField2" value="Email" /> Email<br>
+				<input type="checkbox" name="Fields[CustomField2][]" id="Fields_CustomField2" value="Direct mail" /> Doğrudan Mail<br>
+				<input type="checkbox" name="Fields[CustomField2][]" id="Fields_CustomField2" value="Customized online advertising" /> Özel Tanıtımlar<br>
+				İsim: <input type="text" name="Fields[CustomField1]" id="Fields_CustomField1" /><br>
+				<input type="submit" name="Command" id="Command" value="Listeye Kaydol" />
+				</form>
+		</div>
 	</main>
 {{ end }}
 

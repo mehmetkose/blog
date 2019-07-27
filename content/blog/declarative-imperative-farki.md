@@ -4,7 +4,7 @@ date: 2019-04-02
 title: "Declarative ve Imperative Programlama Farkı"
 featuredImg: ""
 tags: 
-  - paradigmalar
+  - paradigma
   - declerative
   - imperative
   - programlama
@@ -67,3 +67,5 @@ console.log(doubled); // => [2,4,6,8,10]
 
 
 Bu vesileyle, ES6+ yeni gelen Javascript özelliklerinin Declarative ve Functional olduğunu söyleyebiliriz.
+
+[Declarative_programming](https://en.wikipedia.org/wiki/Declarative_programming)
