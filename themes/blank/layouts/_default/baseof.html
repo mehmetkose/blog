@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{{ .Title }}</title>
+	<meta itemprop="name" content="{{ .Title }}" />
+	<meta itemprop="description" content="Frontend Developer. Building blazing fast applications. Loves everything new around the Web." />
+	<meta name="theme-color" content="#fefefe" />
+
+	<meta property="og:title" content="{{ .Title }}" />
+	<meta property="og:description" content="Frontend Developer. Building blazing fast applications. Loves everything new around the Web." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="{{ .Site.BaseURL }}" />
+	<meta property="og:updated_time" content="2019-04-13T00:00:00&#43;00:00" />
+
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="{{ .Title }}" />
+	<meta name="twitter:description" content="Frontend Developer. Building blazing fast applications. Loves everything new around the Web." />
+
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org/",
+			"@type": "Person",
+			"name": "Mehmet KÖSE",
+			"jobTitle": "Frontend Developer",
+			"url": "https://mehmetkose.com.tr,
+			"keywords": "Javascript, react, python, frontend, backend",
+			"alumniOf": "Pamukkale University",
+			"gender": "male",
+			"image": "https://pbs.twimg.com/profile_images/820372733578067968/4D2hyUvU_400x400.jpg",
+			"sameAs": [
+			"https://github.com/mehmetkose",
+			"https://twitter.com/mehmetkose",
+			"https://dribbble.com/mehmetkose",
+			"https://glitch.com/@mehmetkose"
+			]
+		}
+	</script>
+
+
+	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+	{{ with .OutputFormats.Get "RSS" -}}
+	{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+	{{- end }}
+</head>
+<body>
+	{{ partial "header" . }}
+	{{ block "main" . }}{{ end }}
+	{{ partial "footer" . }}
+</body>
+</html>
