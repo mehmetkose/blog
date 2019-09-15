@@ -1,6 +1,6 @@
 ---
 author: "Mehmet Köse"
-date: 2019-04-12
+date: 2019-09-10
 title: "Web'de Img Etiketini Efektif Kullanmak"
 featuredImg: ""
 tags: 
