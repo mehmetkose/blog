@@ -1,35 +1,46 @@
-
 :root {
-  font-size: calc(0.2rem * (100vw - 400px));
+  font-size: calc(0.4rem * (100vw - 400px));
   line-height: 1.5365;
-  --blur: 2px;
+  letter-spacing: 0.1em;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
+::-moz-selection { background: #0000a5; color: #9bf4cf; }
+::selection { background: #0000a5; color: #9bf4cf; }
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  color: #333;
+  font-family: Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: #0000a5;
+  margin: 0;
   padding: 1rem;
+  background: #9bf4cf;
 }
 section {
   display: grid;
   grid-gap: 0.5rem;
   grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 }
-
-
-main{
-  z-index: 100;
-  overflow-x: scroll;
-}
 blockquote {
   margin: 0 0.2em;
 }
 a{
-  color: #333
+  color: #0000a5;
+  text-decoration: underline wavy #0000a5;
+  text-underline-position: under;
+  padding-bottom: 0.5rem;
+}
+a:hover{
+  color: #9bf4cf;
+  background: #0000a5;
+}
+article img{
+  width: 50%;
+}
+li{
+  margin-bottom: 0.6rem;
 }
 footer{
   margin-bottom: 1rem;
-}
-legend:hover{
-  --blur: 0px;
 }
