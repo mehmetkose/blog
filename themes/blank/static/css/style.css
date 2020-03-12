@@ -1,21 +1,39 @@
-:root {
-  font-size: calc(0.4rem * (100vw - 400px));
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --primary: 111,100%,93%;
+    --secondary: 197,100%,23%;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: 193, 9%, 19%;
+    --secondary: 198, 12%, 73%;
+  }
+}
+
+::-moz-selection { background: hsl(var(--secondary)); color: hsl(var(--primary)); }
+::selection { background: hsl(var(--secondary)); color: hsl(var(--primary)); }
+
+body {
+  font-family: 'Montserrat', Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  background-color: hsl(var(--primary));
+  color: hsl(var(--secondary));
+  letter-spacing: -0.03em;
+  color: hsl(var(--secondary));
+  min-height: 100vh;
+  font-size: 1.2rem;
   line-height: 1.5365;
   letter-spacing: 0.1em;
+  font-weight: 400;
+  width: 80vw;
+  margin: 0 auto;
+  text-rendering: optimizeSpeed;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-}
-::-moz-selection { background: #0000a5; color: #9bf4cf; }
-::selection { background: #0000a5; color: #9bf4cf; }
-
-body {
-  font-family: Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  color: #0000a5;
-  margin: 0;
-  padding: 1rem;
-  background: #9bf4cf;
 }
 section {
   display: grid;
@@ -26,14 +44,14 @@ blockquote {
   margin: 0 0.2em;
 }
 a{
-  color: #0000a5;
-  text-decoration: underline wavy #0000a5;
+  color: hsl(var(--secondary));
+  text-decoration: underline wavy hsl(var(--secondary));
   text-underline-position: under;
   padding-bottom: 0.5rem;
 }
 a:hover{
-  color: #9bf4cf;
-  background: #0000a5;
+  color: hsl(var(--primary));
+  background: hsl(var(--secondary));
 }
 article img{
   width: 50%;
@@ -44,3 +62,5 @@ li{
 footer{
   margin-bottom: 1rem;
 }
+
+
