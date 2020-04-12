@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+<html lang="{{ .Site.LanguageCode | default "en" }}">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,7 +7,7 @@
 	<title>{{ .Title }}</title>
 	<meta itemprop="name" content="{{ .Title }}" />
 	<meta name="description" itemprop="description" content="Frontend Developer. Building blazing fast applications. Loves everything new around the Web." />
-	<meta name="theme-color" content="#fefefe" />
+	<meta name="theme-color" content="#E1FFDA" />
 	<meta property="og:title" content="{{ .Title }}" />
 	<meta property="og:description" content="Frontend Developer. Building blazing fast applications. Loves everything new around the Web." />
 	<meta property="og:type" content="website" />
@@ -26,7 +26,9 @@
 			"keywords": "Javascript, react, python, frontend, backend",
 			"alumniOf": "Pamukkale University",
 			"gender": "male",
-			"image": ["{{ .Permalink }}/mehmet-ko%CC%88se.jpg"],
+			"image": [
+				"{{ .Permalink }}/mehmet-ko%CC%88se.jpg"
+			],
 			"sameAs": [
 				"https://github.com/mehmetkose",
 				"https://twitter.com/mehmetkose",
@@ -37,7 +39,6 @@
 	</script>
 
 	<style>
-		@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -56,7 +57,7 @@
 ::selection { background: hsl(var(--secondary)); color: hsl(var(--primary)); }
 
 body {
-  font-family: 'Montserrat', Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   background-color: hsl(var(--primary));
   color: hsl(var(--secondary));
   letter-spacing: -0.03em;
