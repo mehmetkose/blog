@@ -8,37 +8,33 @@
 	<meta itemprop="name" content="{{ .Title }}" />
 	<meta itemprop="description" content="Frontend Developer. Building blazing fast applications. Loves everything new around the Web." />
 	<meta name="theme-color" content="#fefefe" />
-
 	<meta property="og:title" content="{{ .Title }}" />
 	<meta property="og:description" content="Frontend Developer. Building blazing fast applications. Loves everything new around the Web." />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="{{ .Site.BaseURL }}" />
-	<meta property="og:updated_time" content="2019-04-13T00:00:00&#43;00:00" />
-
+	<meta property="og:url" content="{{ .Permalink }}" />
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:title" content="{{ .Title }}" />
 	<meta name="twitter:description" content="Frontend Developer. Building blazing fast applications. Loves everything new around the Web." />
-
+	<meta property="og:image" content="https://mehmetkose.com.tr/mehmet-ko%CC%88se.jpg" />
 	<script type="application/ld+json">
 		{
-			"@context": "http://schema.org/",
-			"@type": "Person",
-			"name": "Mehmet KÖSE",
-			"jobTitle": "Frontend Developer",
-			"url": "https://mehmetkose.com.tr,
-			"keywords": "Javascript, react, python, frontend, backend",
-			"alumniOf": "Pamukkale University",
-			"gender": "male",
-			"image": "https://pbs.twimg.com/profile_images/820372733578067968/4D2hyUvU_400x400.jpg",
-			"sameAs": [
-			"https://github.com/mehmetkose",
-			"https://twitter.com/mehmetkose",
-			"https://dribbble.com/mehmetkose",
-			"https://glitch.com/@mehmetkose"
+			'@context': 'http://schema.org/',
+			'@type': 'Person',
+			'name': 'Mehmet KÖSE',
+			'jobTitle': 'Frontend Developer',
+			'url': '{{ .Permalink }}',
+			'keywords': 'Javascript, react, python, frontend, backend',
+			'alumniOf': 'Pamukkale University',
+			'gender': 'male',
+			'image': ['{{ .Permalink }}/mehmet-ko%CC%88se.jpg'],
+			'sameAs': [
+				'https://github.com/mehmetkose',
+				'https://twitter.com/mehmetkose',
+				'https://dribbble.com/mehmetkose',
+				'https://glitch.com/@mehmetkose'
 			]
 		}
 	</script>
-
 
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
