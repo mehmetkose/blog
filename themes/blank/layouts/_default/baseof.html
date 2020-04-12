@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>{{ .Title }}</title>
 	<meta itemprop="name" content="{{ .Title }}" />
-	<meta itemprop="description" content="Frontend Developer. Building blazing fast applications. Loves everything new around the Web." />
+	<meta name="description" itemprop="description" content="Frontend Developer. Building blazing fast applications. Loves everything new around the Web." />
 	<meta name="theme-color" content="#fefefe" />
 	<meta property="og:title" content="{{ .Title }}" />
 	<meta property="og:description" content="Frontend Developer. Building blazing fast applications. Loves everything new around the Web." />
@@ -18,23 +18,95 @@
 	<meta property="og:image" content="https://mehmetkose.com.tr/mehmet-ko%CC%88se.jpg" />
 	<script type="application/ld+json">
 		{
-			'@context': 'http://schema.org/',
-			'@type': 'Person',
-			'name': 'Mehmet KÖSE',
-			'jobTitle': 'Frontend Developer',
-			'url': '{{ .Permalink }}',
-			'keywords': 'Javascript, react, python, frontend, backend',
-			'alumniOf': 'Pamukkale University',
-			'gender': 'male',
-			'image': ['{{ .Permalink }}/mehmet-ko%CC%88se.jpg'],
-			'sameAs': [
-				'https://github.com/mehmetkose',
-				'https://twitter.com/mehmetkose',
-				'https://dribbble.com/mehmetkose',
-				'https://glitch.com/@mehmetkose'
+			"@context": "http://schema.org/",
+			"@type": "Person",
+			"name": "Mehmet KÖSE",
+			"jobTitle": "Frontend Developer",
+			"url": "{{ .Permalink }}",
+			"keywords": "Javascript, react, python, frontend, backend",
+			"alumniOf": "Pamukkale University",
+			"gender": "male",
+			"image": ["{{ .Permalink }}/mehmet-ko%CC%88se.jpg"],
+			"sameAs": [
+				"https://github.com/mehmetkose",
+				"https://twitter.com/mehmetkose",
+				"https://dribbble.com/mehmetkose",
+				"https://glitch.com/@mehmetkose"
 			]
 		}
 	</script>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --primary: 111,100%,93%;
+    --secondary: 197,100%,23%;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: 193, 9%, 19%;
+    --secondary: 198, 12%, 73%;
+  }
+}
+
+::-moz-selection { background: hsl(var(--secondary)); color: hsl(var(--primary)); }
+::selection { background: hsl(var(--secondary)); color: hsl(var(--primary)); }
+
+body {
+  font-family: 'Montserrat', Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  background-color: hsl(var(--primary));
+  color: hsl(var(--secondary));
+  letter-spacing: -0.03em;
+  color: hsl(var(--secondary));
+  min-height: 100vh;
+  font-size: 1.2rem;
+  line-height: 1.5365;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+  width: 80vw;
+  margin: 0 auto;
+  text-rendering: optimizeSpeed;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+section {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+blockquote {
+  margin: 0 0.2em;
+}
+a{
+  color: hsl(var(--secondary));
+  text-decoration: underline wavy hsl(var(--secondary));
+  text-underline-position: under;
+  padding-bottom: 0.5rem;
+}
+a:hover{
+  color: hsl(var(--primary));
+  background: hsl(var(--secondary));
+}
+article img{
+  width: 50%;
+}
+li{
+  margin-bottom: 0.6rem;
+}
+legend img{
+  margin-top: 1rem;
+  width: 80px;
+  border-radius: 50%;
+}
+footer{
+  margin-bottom: 1rem;
+}
+	</style>
 
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
