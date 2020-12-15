@@ -1,0 +1,13 @@
+---
+enable: true
+topTitle: Hello, I am Mehmet
+content: >
+  # I am here for your personal business
+
+  Enjoy team diversity and increase their networks among others people
+  in various fields by
+buttonName: Contact me
+buttonURL: contact
+image: images/hero/mehmet-kose.png
+videoThumb: images/hero/popup-thumb.png
+videoURL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
